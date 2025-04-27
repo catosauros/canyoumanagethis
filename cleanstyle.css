@@ -1,0 +1,46 @@
+html, body {
+    margin:0;
+    padding:0;
+    scroll-behavior: smooth;
+    font-family:'Times New Roman', Times, serif;
+}
+
+.pagesection {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;    
+}
+
+#first {
+    background-color: blue;
+}
+
+#second {
+    background-color: white;
+}
+
+#third {
+    background-color: black;
+}
+
+.navbuttons {
+    position: fixed;
+    bottom: 50%;
+    display: flex;
+    flex-direction: column;
+    z-index: 9999;
+    right: 2rem;
+}
+
+.butn {
+    width: 16px;
+    height: 16px;
+    border: 2px solid;
+    background: transparent;
+    border-radius: 50%;
+    display: block;
+    margin: 8px;
+}
+
