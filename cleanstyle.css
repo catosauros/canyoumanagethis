@@ -1,46 +1,143 @@
 html, body {
-    margin:0;
-    padding:0;
-    scroll-behavior: smooth;
-    font-family:'Times New Roman', Times, serif;
+  margin:0;
+  padding:0;
+  scroll-behavior: smooth;
+  font-family:'Times New Roman', Times, serif;
 }
 
 .pagesection {
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;    
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;    
 }
 
 #first {
-    background-color: blue;
+  background-color: blue;
+  color: white;
+  overflow: hidden;
 }
 
 #second {
-    background-color: white;
+  background-color: white;
+  display: block;
+  color:blue;
 }
 
 #third {
-    background-color: black;
+  background-color: black;
 }
 
 .navbuttons {
-    position: fixed;
-    bottom: 50%;
-    display: flex;
-    flex-direction: column;
-    z-index: 9999;
-    right: 2rem;
+  position: fixed;
+  bottom: 50%;
+  display: flex;
+  flex-direction: column;
+  z-index: 9999;
+  right: 2rem;
 }
 
 .butn {
-    width: 16px;
-    height: 16px;
-    border: 2px solid;
-    background: transparent;
-    border-radius: 50%;
-    display: block;
-    margin: 8px;
+  width: 16px;
+  height: 16px;
+  border: 2px solid;
+  background: transparent;
+  border-radius: 50%;
+  display: block;
+  margin: 8px;
 }
 
+.scroll-line {
+  position: absolute;
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.scroll-top {
+  top: 0;
+}
+
+.scroll-middle {
+  top: 50%;
+  transform: translateY(-50%);
+  overflow: hidden;
+}
+
+.scroll-bottom {
+  bottom: 0;
+}
+
+.scroll-content {
+  display: flex;
+}
+
+
+.scroll-content span {
+  font-size: 10rem;
+}
+
+/* Left to right */
+@keyframes scroll-left-right {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+
+/* Right to left */
+@keyframes scroll-right-left {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.container {
+  padding: 2px 16px;
+}
+
+.managers {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  align-items: center;
+}
+
+h1 {
+  padding: 1rem;
+  font-size: 5rem;
+}
+
+#bottom1, #bottom2, #top1, #top2 {
+  white-space: pre;
+  flex-shrink: 0;
+  margin: 0;
+  font-size: 4rem;
+  min-width: 100%;
+  animation: scroll-left-right 20s linear infinite;
+}
+
+#middle1, #middle2 {
+  white-space: pre;
+  flex-shrink: 0;
+  margin: 0;
+  font-size:16rem;
+  min-width: 100%;
+  animation: scroll-right-left 20s linear infinite;
+}
