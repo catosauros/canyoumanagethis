@@ -1,10 +1,47 @@
+
+/* @font-face {
+  font-family: 'Argesta';
+  src: url('fonts/argesta/argestadisplay-regular-webfont.woff2') format('woff2'),
+       url('fonts/argesta/argestadisplay-regular-webfont.woff') format('woff'),
+       url('fonts/argesta/argestadisplay-regular-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+} */
+
+/* @font-face {
+  font-family: 'awesome-shorten-font';
+  src: url('/home/maria/codingprojects/mconference/canyoumanagethis/fonts/awesome-shorten-font/Awesome-Shorten-BF6781e4db99e2b.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+} */
+
+/* @font-face {
+  font-family: 'Apparel';
+  src: url('fonts/apparel/Fontspring-DEMO-appareldisplay-regular.otf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+} */
+
+@font-face {
+  font-family: 'Ringift';
+  src: url('fonts/ringift/ringift.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
 html, body {
   margin:0;
   padding:0;
   scroll-behavior: smooth;
-  font-family:'Times New Roman', Times, serif;
+  font-family: 'Ringift', serif;
 }
 
+p {
+  font-size: 1.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
 .pagesection {
   height: 100vh;
   display: flex;
@@ -27,6 +64,8 @@ html, body {
 
 #third {
   background-color: black;
+  color: white;
+  display: block;
 }
 
 .navbuttons {
@@ -45,7 +84,7 @@ html, body {
   background: transparent;
   border-radius: 50%;
   display: block;
-  margin: 8px;
+  margin-bottom: 8px;
 }
 
 .scroll-line {
@@ -100,8 +139,11 @@ html, body {
 
 
 .card {
+  
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
+
+
 }
 
 .card:hover {
@@ -110,6 +152,7 @@ html, body {
 
 .container {
   padding: 2px 16px;
+
 }
 
 .managers {
@@ -120,8 +163,9 @@ html, body {
 }
 
 h1 {
-  padding: 1rem;
-  font-size: 5rem;
+  margin:0;
+  padding: 5rem;
+  font-size: 10rem;
 }
 
 #bottom1, #bottom2, #top1, #top2 {
@@ -141,3 +185,4 @@ h1 {
   min-width: 100%;
   animation: scroll-right-left 20s linear infinite;
 }
+

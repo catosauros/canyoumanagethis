@@ -1,7 +1,6 @@
 let sections = document.querySelectorAll(".pagesection");
 let buttons = document.querySelectorAll(".butn");
 
-console.log(buttons);
 const observer = new IntersectionObserver(entries => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
