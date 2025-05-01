@@ -1,26 +1,26 @@
 
-/* @font-face {
+@font-face {
   font-family: 'Argesta';
   src: url('fonts/argesta/argestadisplay-regular-webfont.woff2') format('woff2'),
        url('fonts/argesta/argestadisplay-regular-webfont.woff') format('woff'),
        url('fonts/argesta/argestadisplay-regular-webfont.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
-} */
+}
 
-/* @font-face {
+@font-face {
   font-family: 'awesome-shorten-font';
   src: url('/home/maria/codingprojects/mconference/canyoumanagethis/fonts/awesome-shorten-font/Awesome-Shorten-BF6781e4db99e2b.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
-} */
+}
 
-/* @font-face {
+@font-face {
   font-family: 'Apparel';
   src: url('fonts/apparel/Fontspring-DEMO-appareldisplay-regular.otf') format('truetype');
   font-weight: normal;
   font-style: normal;
-} */
+}
 
 @font-face {
   font-family: 'Ringift';
@@ -32,7 +32,7 @@ html, body {
   margin:0;
   padding:0;
   scroll-behavior: smooth;
-  font-family: 'Ringift', serif;
+  font-family: 'awesome-shorten-font', serif;
 }
 
 p {
