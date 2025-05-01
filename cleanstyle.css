@@ -50,19 +50,19 @@ h2 {
   text-align: center;    
 }
 
-#first {
+#welcome {
   background-color: blue;
   color: white;
   overflow: hidden;
 }
 
-#second {
+#managers {
   background-color: white;
   display: block;
   color:blue;
 }
 
-#third {
+#guests {
   background-color: black;
   color: white;
   display: block;
