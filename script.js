@@ -4,21 +4,21 @@ let buttons = document.querySelectorAll(".butn");
 const observer = new IntersectionObserver(entries => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
-      const id = entry.target.id; // Get the section id (like "section1")
+      const id = entry.target.id;
 
       let color = "";
     
       buttons.forEach(button => {
         button.style.background = "transparent";
       });
-      // Now set color based on section ID manually
-      if (id === "first") {
+      
+      if (id === "welcome") {
         color="white";
         buttons[0].style.background = color;
-      } else if (id === "second") {
+      } else if (id === "managers") {
         color="black";
         buttons[1].style.background = color;
-      } else if (id === "third") {
+      } else if (id === "guests") {
         color="blue";
         buttons[2].style.background = color;
       }
