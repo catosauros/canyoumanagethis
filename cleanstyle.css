@@ -32,15 +32,15 @@ html, body {
   margin:0;
   padding:0;
   scroll-behavior: smooth;
-  font-family: 'awesome-shorten-font', serif;
+  font-family:'Times New Roman', Times, serif;
 }
 
 p {
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: 3rem;
 }
 .pagesection {
   height: 100vh;
@@ -60,6 +60,7 @@ h2 {
   background-color: white;
   display: block;
   color:blue;
+  margin:auto;
 }
 
 #guests {
@@ -142,8 +143,9 @@ h2 {
   
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
-
-
+  height: 550px;
+  width: 350px;
+  border-color: white;
 }
 
 .card:hover {
